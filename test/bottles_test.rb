@@ -7,7 +7,7 @@ class BottlesTest < Minitest::Test
     expected = <<-VERSE
 99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
-VERSE
+    VERSE
     assert_equal expected, ::Bottles.new.verse(99)
   end
 
@@ -15,7 +15,7 @@ VERSE
     expected = <<-VERSE
 89 bottles of beer on the wall, 89 bottles of beer.
 Take one down and pass it around, 88 bottles of beer on the wall.
-VERSE
+    VERSE
     assert_equal expected, ::Bottles.new.verse(89)
   end
 
@@ -50,7 +50,7 @@ Take one down and pass it around, 98 bottles of beer on the wall.
 
 98 bottles of beer on the wall, 98 bottles of beer.
 Take one down and pass it around, 97 bottles of beer on the wall.
-VERSES
+    VERSES
     assert_equal expected, ::Bottles.new.verses(99, 98)
   end
 
@@ -64,7 +64,7 @@ Take it down and pass it around, no more bottles of beer on the wall.
 
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
-VERSES
+    VERSES
     assert_equal expected, ::Bottles.new.verses(2, 0)
   end
 
